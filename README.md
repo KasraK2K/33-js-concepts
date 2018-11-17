@@ -1,6 +1,6 @@
-﻿<h1 align="center">
+﻿<h1 align="center" dir="rtl">
 <br>
-  <a href="https://github.com/leonardomso/33"><img src="https://i.imgur.com/dsHmk6H.jpg" alt="33 Concepts Every JS Developer Should Know" width=200"></a>
+  <a href="https://github.com/leonardomso/33"><img src="https://i.imgur.com/dsHmk6H.jpg" alt="۳۳ مفهومی که هر توسعه‌دهنده جاوا اسکریپت باید بداند" width=200"></a>
   <br>
     <br>
   ۳۳ مفهومی که هر توسعه‌دهنده جاوا اسکریپت باید بداند
@@ -23,7 +23,7 @@
 
 این مخزن با هدف راهنمایی بکارگیری مفاهیم جاوا اسکریپت برای توسعه‌دهندگان ایجاد شده است. این موارد اجباری نیستند، اما شما را برای یادگیری در آینده راهنمایی می‌کند. این مخزن بر پایه مطلبی که توسط [Stephen Curtis](https://twitter.com/stephenthecurt) نوشته شده است (که می‌توانید در [اینجا](https://medium.com/@stephenthecurt/33-fundamentals-every-javascript-developer-should-know-13dd720a90d1) آنرا بخوانید) ساخته شده است.
 
-## اجتماع
+## مشارکت
 
 شما هم اگر نظری دارید و یا قبلا در این مورد مطلبی نگارش کرده‌اید با PR آنرا به ما اطلاع دهید. اگر هم می‌خواهید این صفحه را به زبان اصلی خودتان ترجمه کنید، لطفا اینکار را انجام دهید.
 
@@ -44,38 +44,38 @@
 ## فهرست مطالب
 
 1. **[Call Stack](#1-call-stack)**
-2. **[انواع Primitive](#2-primitive-types)**
-3. **[انواع Value و انواع مرجع](#3-value-types-and-reference-types)**
-4. **[Implicit, Explicit, Nominal, Structuring و Duck Typing](#4-implicit-explicit-nominal-structuring-and-duck-typing)**
-5. **[== در برابر === در برابر typeof](#5--vs--vs-typeof)**
-6. **[اسکوپ تابع، اسکوپ بلوک و اسکوپ ثابت](#6-function-scope-block-scope-and-lexical-scope)**
-7. **[Expression در برابر Statement](#7-expression-vs-statement)**
-8. **[IIFE، ماژول‌ها و Namespaceها](#8-iife-modules-and-namespaces)**
-9. **[صف پیغام‌ها و حلقه Event](#9-message-queue-and-event-loop)**
-10. **[setTimeout, setInterval و requestAnimationFrame](#10-settimeout-setinterval-and-requestanimationframe)**
-11. **[موتورهای جاوااسکریپت](#11-javascript-engines)**
-12. **[عملگرهای بیتی، انواع آرایه و بافرهای آرایه](#12-bitwise-operators-type-arrays-and-array-buffers)**
-13. **[DOM و درخت‌های Layout](#13-dom-and-layout-trees)**
-14. **[Factories و کلاسها](#14-factories-and-classes)**
-15. **[this, call, apply و bind](#15-this-call-apply-and-bind)**
+2. **[انواع Primitive](#2-انواع-Primitive)**
+3. **[انواع Value و انواع مرجع](#3-انواع-Value-و-انواع-مرجع)**
+4. **[Implicit, Explicit, Nominal, Structuring و Duck Typing](#4-implicit-explicit-nominal-structuring-و-duck-typing)**
+5. **[== در برابر === در برابر typeof](#5--در-برابر--در-برابر-typeof)**
+6. **[اسکوپ تابع، اسکوپ بلوک و اسکوپ ثابت](#6-اسکوپ-تابع،-اسکوپ-بلوک-و-اسکوپ-ثابت)**
+7. **[Expression در برابر Statement](#7-Expression-در-برابر-Statement)**
+8. **[IIFE، ماژول‌ها و Namespaceها](#8-IIFE،-ماژول‌ها-و-Namespaceها)**
+9. **[صف پیغام‌ها و حلقه Event](#9-صف-پیغام‌ها-و-حلقه-Event)**
+10. **[setTimeout, setInterval و requestAnimationFrame](#10-settimeout-setinterval-و-requestanimationframe)**
+11. **[موتورهای جاوااسکریپت](#11-موتورهای-جاوااسکریپت)**
+12. **[عملگرهای بیتی، انواع آرایه و بافرهای آرایه](#12-عملگرهای-بیتی،-انواع-آرایه-و-بافرهای-آرایه)**
+13. **[DOM و درخت‌های Layout](#13-DOM-و-درخت‌های-Layout)**
+14. **[Factories و کلاسها](#14-Factories-و-کلاسها)**
+15. **[this, call, apply و bind](#15-this-call-apply-و-bind)**
 16. **[new, Constructor, instanceof and Instances](#16-new-constructor-instanceof-and-instances)**
-17. **[ارث‌بری Prototype و ذنجیره Prototype](#17-prototype-inheritance-and-prototype-chain)**
-18. **[Object.create و Object.assign](#18-objectcreate-and-objectassign)**
+17. **[ارث‌بری Prototype و ذنجیره Prototype](#17-ارث‌بری-Prototype-و-ذنجیره-Prototype)**
+18. **[Object.create و Object.assign](#18-objectcreate-و-objectassign)**
 19. **[map, reduce, filter](#19-map-reduce-filter)**
-20. **[توابع Pure، اثرات جانبی و جهش های حالت](#20-pure-functions-side-effects-and-state-mutation)**
+20. **[توابع Pure، اثرات جانبی و جهش های حالت](#20-توابع-Pure،-اثرات-جانبی-و-جهش-های-حالت)**
 21. **[Closures](#21-closures)**
 22. **[High Order Functions](#22-high-order-functions)**
-23. **[بازگشتی](#23-recursion)**
-24. **[کالکشن‌ها و Generatorها](#24-collections-and-generators)**
+23. **[بازگشتی](#23-بازگشتی)**
+24. **[کالکشن‌ها و Generatorها](#24-کالکشن‌ها-و-Generatorها)**
 25. **[Promises](#25-promises)**
 26. **[async/await](#26-asyncawait)**
-27. **[ساختار اطلاعات](#27-data-structures)**
-28. **[عملگرهای سنگین و Big O Notation](#28-expensive-operation-and-big-o-notation)**
-29. **[الگوریتم‌ها](#29-algorithms)**
-30. **[ارث‌بری، پلی‌مورفیزم و استفاده مجدد از کد](#30-inheritance-polymorphism-and-code-reuse)**
-31. **[الگوهای طراحی](#31-design-patterns)**
+27. **[ساختار اطلاعات](#27-ساختار-اطلاعات)**
+28. **[عملگرهای سنگین و Big O Notation](#28-عملگرهای-سنگین-و-Big-O-Notation)**
+29. **[الگوریتم‌ها](#29-الگوریتم‌ها)**
+30. **[ارث‌بری، پلی‌مورفیزم و استفاده مجدد از کد](#30-ارث‌بری،-پلی‌مورفیزم-و-استفاده-مجدد-از-کد)**
+31. **[الگوهای طراحی](#31-الگوهای-طراحی)**
 32. **[Partial Applications, Currying, Compose and Pipe](#32-partial-applications-currying-compose-and-pipe)**
-33. **[کدنویسی تمیز](#33-clean-code)**
+33. **[کدنویسی تمیز](#33-کدنویسی-تمیز)**
 
 ---
 
@@ -940,4 +940,4 @@
 
 - 🎥 [JavaScript Pro Tips - Code This, NOT That](https://www.youtube.com/watch?v=Mus_vwhTCq0)
 
-**[⬆ بازگشت به بالا](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-مطالب)**
